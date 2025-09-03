@@ -1,0 +1,169 @@
+.containerProject {
+height: 110vh;
+  .header {
+    width: 80%;
+
+    gap: 30px;
+    h1 {
+
+      font-size: 28px;
+      line-height: 64px;
+     
+    }
+    button {
+      all: unset;
+      font-family: Poppins;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0%;
+      color: #282938;
+    }
+  }
+  .imageBox {
+
+    gap: 15px;
+
+    .bigImage {
+      width: 65%;
+      position: relative;
+      img {
+        width: 100%;
+        object-fit: cover;
+        &:hover ~ .hover {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          transform: 500ms;
+        }
+      }
+      .hover {
+        width: 50%;
+        height: 100%;
+        padding: 25px;
+        box-sizing: border-box;
+        opacity: 0.4;
+        background: linear-gradient(rgba(28, 30, 83, 0.42), rgb(5, 6, 31));
+        position: absolute;
+        top: 0;
+        left: -50%;
+        z-index: 3;
+        display: none;
+        &:hover {
+          left: 0;
+          display: block;
+          transform: 500ms;
+        }
+        .textBox {
+
+          gap: 10px;
+          p {
+           
+            font-size: 24px;
+            line-height: 36px;
+         
+          }
+          .lorem {
+        
+            font-size: 16px;
+            line-height: 28px;
+          
+          }
+
+          .textButton {
+            all: unset;
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            color: rgba(252, 217, 128, 1);
+            text-align: center;
+            margin-top: 5px;
+            svg {
+              width: 12px;
+              height: 12px;
+              fill: rgba(252, 217, 128, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+  .smallImage {
+    width: 35%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+    .image2 {
+      width: 100%;
+      height: auto;
+      img {
+        width: 90%;
+        object-fit: cover;
+      }
+    }
+    .image {
+      width: 100%;
+      height: auto;
+      position: relative;
+
+      img {
+        width: 90%;
+        object-fit: cover;
+        &:hover ~ .hover {
+          display: block;
+          right: 0;
+        }
+      }
+
+      .hover {
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        padding: 25px;
+        box-sizing: border-box;
+               background: linear-gradient(rgba(28, 30, 83, 0.42), rgb(5, 6, 31));
+        position: absolute;
+        top: 0;
+        right: -90%;
+        z-index: 2;
+        display: none;
+        &:hover {
+          display: block;
+          right: 0;
+        }
+
+        .textBox {
+ 
+          p {
+       
+            font-size: 24px;
+            line-height: 36px;
+          
+          }
+
+          .textButton {
+            all: unset;
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            color: rgba(252, 217, 128, 1);
+            text-align: center;
+            margin-top: 5px;
+            svg {
+              width: 12px;
+              height: 12px;
+              fill: rgba(252, 217, 128, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+}

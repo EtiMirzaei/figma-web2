@@ -1,0 +1,90 @@
+.baseBoxblog {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  .ourBlog {
+    width: 80%;
+    font-size: 24px;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+}
+
+.containerBlog {
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  .blogBox {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1, 1fr;
+    gap: 32px;
+
+    .card {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: start;
+      align-items: start;
+      gap: 10px;
+      border: none;
+
+      .image {
+        width: 100%;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .date {
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 28px;
+        letter-spacing: 0%;
+        color: rgba(40, 41, 56, 1);
+      }
+      .content {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        color: rgba(40, 41, 56, 1);
+      }
+      p {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        color: rgba(40, 41, 56, 1);
+      }
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 28px;
+        letter-spacing: 0%;
+        color: rgba(40, 41, 56, 1);
+
+        svg {
+          width: 12px;
+          height: 5px;
+        }
+      }
+    }
+  }
+}

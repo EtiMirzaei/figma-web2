@@ -1,0 +1,50 @@
+.containerFaq {
+  width: 100%;
+    height: 600px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+.boxFaq{
+    width: 80%;
+    display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: start;
+
+  .headingText {
+    width: fit-content;
+      display: flex;
+  flex-flow: column nowrap;
+  justify-content:start;
+  align-items: start;
+
+
+    h1 {
+      font-family: Poppins;
+      font-weight: 600;
+      font-size: 38px;
+      color: rgba(40, 41, 56, 1);
+      line-height: 56px;
+      letter-spacing: 0%;
+    }
+    a {
+      text-decoration: none;
+      color: rgba(36, 5, 242, 1);
+      h2 {
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0%;
+        text-align: center;
+      }
+    }
+  }
+  .container{
+    width: 60%;
+  }
+  }
+}
+
