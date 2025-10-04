@@ -1,0 +1,205 @@
+.containerProject {
+  width: 100%;
+  height:70vh;
+  background-color: white;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+  .header {
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    h1 {
+      font-family: Poppins;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 64px;
+      letter-spacing: 0%;
+      color: #282938;
+    }
+    button {
+      all: unset;
+      font-family: Poppins;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0%;
+      color: #282938;
+    }
+  }
+  .imageBox {
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    .bigImage {
+      width: 65%;
+      position: relative;
+      img {
+        width: 100%;
+        object-fit: cover;
+        &:hover ~ .hover {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          transform: 500ms;
+        }
+      }
+      .hover {
+        width: 50%;
+        height: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+        opacity: 0.4;
+        background: linear-gradient(rgba(28, 30, 83, 0.42), rgb(5, 6, 31));
+        position: absolute;
+        top: 0;
+        left: -50%;
+        z-index: 3;
+        display: none;
+        &:hover {
+          left: 0;
+          display: block;
+          transform: 500ms;
+        }
+        .textBox {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: end;
+          align-items: start;
+          gap: 10px;
+          p {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 15px;
+            letter-spacing: 0%;
+            color: #ffffff;
+          }
+          .lorem {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 7px;
+            line-height: 20px;
+            letter-spacing: 0%;
+            color: #ffffff;
+          }
+
+          .textButton {
+            all: unset;
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 8px;
+            line-height: 10px;
+            letter-spacing: 0%;
+            color: rgba(252, 217, 128, 1);
+            text-align: center;
+            margin-top: 5px;
+            svg {
+              width: 8px;
+              height: 8px;
+              fill: rgba(252, 217, 128, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+  .smallImage {
+    width: 35%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+    .image2{
+       width: 100%;
+      height: auto;
+    img {
+      width: 90%;
+      object-fit: cover;
+    }
+    }
+    .image {
+      width: 100%;
+      height: auto;
+      position: relative;
+   
+      img {
+        width: 90%;
+        object-fit: cover;
+           &:hover~.hover{
+        display: block;
+        right: 0;
+      }
+      }
+
+        .hover {
+          width: 100%;
+          height: 100%;
+          opacity: 0.4;
+          padding: 10px;
+          box-sizing: border-box;
+            background: linear-gradient(rgba(28, 30, 83, 0.42), rgb(5, 6, 31));
+          position: absolute;
+          top: 0;
+          right: -90%;
+          z-index: 2;
+          display: none;
+             &:hover{
+        display: block;
+        right: 0;
+      }
+
+          .textBox {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: end;
+            align-items: start;
+            gap: 10px;
+            p {
+              font-family: Poppins;
+              font-weight: 600;
+              font-size: 10px;
+              line-height: 15px;
+              letter-spacing: 0%;
+              color: #ffffff;
+            }
+
+            .textButton {
+              all: unset;
+              font-family: Poppins;
+              font-weight: 500;
+              font-size: 8px;
+              line-height: 10px;
+              letter-spacing: 0%;
+              color: rgba(252, 217, 128, 1);
+              text-align: center;
+              margin-top: 5px;
+              svg {
+                width: 8px;
+                height: 8px;
+                fill: rgba(252, 217, 128, 1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
